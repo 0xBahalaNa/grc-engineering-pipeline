@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Real variable values (the committed template is terraform.tfvars.example)
+terraform.tfvars
+*.auto.tfvars
