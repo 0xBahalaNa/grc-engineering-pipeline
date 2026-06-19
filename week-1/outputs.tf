@@ -13,6 +13,7 @@ output "log_bucket_name" {
   value       = aws_s3_bucket.log.id
 }
 
-# TODO (SC-28 attestation): once you add the encryption configuration, add an
-# output that surfaces the algorithm in effect (for example "AES256"). This is
-# your machine-readable proof of encryption at rest.
+output "encryption_algorithm" {
+  description = "An attestation of encryption at rest."
+  value       = tolist(aws_s3_bucket_server_side_encryption_configuration.primary.rule)[0].apply_server_side_encryption_by_default[0].sse_algorithm
+}
