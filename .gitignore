@@ -2,10 +2,16 @@
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.tfstate.lock.info
+tfplan
 *.tfplan
 crash.log
 crash.*.log
-
 # Real variable values (the committed template is terraform.tfvars.example)
-terraform.tfvars
+*.tfvars
+*.tfvars.json
 *.auto.tfvars
+
+# OS / editor cruft
+.DS_Store
+*.swp
