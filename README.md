@@ -99,7 +99,7 @@ This repo is a working model of the FedRAMP 20x compliance-as-code posture:
 
 ## CJIS v6.0 Relevance
 
-CJIS v6.0 (audit standard since April 1, 2026; aligned to NIST 800-53 Rev 5 as of Dec 2024)
+CJIS v6.0 (published Dec 27, 2024; default audit baseline from April 1, 2026; Priority 2-4 fully enforceable Oct 1, 2027)
 adds deltas on top of the FedRAMP High baseline this pipeline targets. The two that bind on
 an evidence pipeline like this:
 
